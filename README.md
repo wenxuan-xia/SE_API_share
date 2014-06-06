@@ -1,6 +1,6 @@
 SE_API_share
 ============
-<p>Please list the cross-group APIs here.</p>
-<p>You'd better attach your code here. </p>
-<p>Please build your folder.</p>
+Please list the cross-group APIs here.</br>
+You'd better attach your code here. </br>
+Please build your folder.</br>
 
