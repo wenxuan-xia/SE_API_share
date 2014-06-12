@@ -32,3 +32,76 @@ SE_API_share
 <br>功能	向中央交易系统输入买卖指令（内部生成委托单号作为主键）<br\>
 <br>通信子系统	交易客户端<br\>
 <br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	DeleteRecord(commissionID)<br\>
+<br>功能	撤销指定委托单（需要与资金、证券账户确认）<br\>
+<br>通信子系统	交易客户端<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>1.1.2	查询指令处理组件<br\>
+<br>接口函数	GetintervalOpen(start,end,stockId)<br\>
+<br>功能	查询指定时间区间内开盘价<br\>
+<br>通信子系统	网上信息发布系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	GetintervalClose(start,end,stockId)<br\>
+<br>功能	查询指定时间区间内收盘价<br\>
+<br>通信子系统	网上信息发布系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	GetintervalHighest(start,end,stockId)<br\>
+<br>功能	查询指定时间区间内最高价<br\>
+<br>通信子系统	网上信息发布系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	GetintervalLowest(start,end,stockId)<br\>
+<br>功能	查询指定时间区间内最低价<br\>
+<br>通信子系统	网上信息发布系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	Cancel(stockID)<br\>
+<br>功能	撤销指定股票的相关交易<br\>
+<br>通信子系统	交易管理系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	GetCurrentPrice(stockId)<br\>
+<br>功能	显示股票最新成交价<br\>
+<br>通信子系统	交易管理系统，交易客户端<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	GetCurrentAmount(stockId)<br\>
+<br>功能	显示股票最新成交量<br\>
+<br>通信子系统	交易管理系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	SortBuyPrice(stockId,order=0)<br\>
+<br>功能	按照升序显示买入价格<br\>
+<br>通信子系统	交易管理系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	SortSellPrice(stockId,order=0)<br\>
+<br>功能	按照升序显示卖出价格<br\>
+<br>通信子系统	交易管理系统<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br><br\>
+<br><br\>
+<br>接口函数	GetHighestDeal(stockId,type)<br\>
+<br>功能	根据输入参数，返回当日最高成交价格，本周最高成交价格，或本月最高成交价格<br\>
+<br>通信子系统	交易客户端<br\>
+<br>方向	提供给其他模块<br\>
+<br><br\>
+<br>接口函数	GetLowestDeal(stockId,type)<br\>
+<br>功能	根据输入参数，返回当日最低成交价格，本周最低成交价格，或本月最低成交价格<br\>
+<br>通信子系统	交易客户端<br\>
+<br>方向	提供给其他模块<br\>
+<br>1.1.3	交易匹配组件<br\>
+<br>接口函数	IfZQTradeSuccess(commissionID,ZQAccountID,amount, stockID,isall)<br\>
+<br>功能	向证券账户发出交易请求<br\>
+<br>通信子系统	证券账户子系统<br\>
+<br>方向	其他模块提供<br\>
+<br><br\>
+<br>接口函数	IfZJTradeSuccess(commissionID,ZQAccountID,amount, stockID,isall)<br\>
+<br>功能	向资金账户发出交易请求<br\>
+<br>通信子系统	资金账户子系统<br\>
+<br>方向	其他模块提供<br\>
