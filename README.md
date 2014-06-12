@@ -26,10 +26,9 @@ SE_API_share
 处理：冻结证券账户ID<br \>
 返回：成功与否<br \>
 
-<h1><中央交易系统/h1>
-
-<br>1.1.1	买卖撤销指令处理组件接口 </br>
-<br>接口函数	AddRecord(stockID,commission_amount,commission_price,commission_time,stockholderID,stockaccountID)</br>
-<br>功能	向中央交易系统输入买卖指令（内部生成委托单号作为主键）</br>
-<br>通信子系统	交易客户端</br>
-<br>方向	提供给其他模块</br>
+<h1>中央交易系统</h1>
+<br>1.1.1	买卖撤销指令处理组件接口 <br\>
+<br>接口函数	AddRecord(stockID,commission_amount,commission_price,commission_time,stockholderID,stockaccountID)<br\>
+<br>功能	向中央交易系统输入买卖指令（内部生成委托单号作为主键）<br\>
+<br>通信子系统	交易客户端<br\>
+<br>方向	提供给其他模块<br\>
