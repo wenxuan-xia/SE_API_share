@@ -1,8 +1,8 @@
 SE_API_share
 ============
 <h1>十个默认币种</h1>
-<li>CNY人民币</li>
-<li>USD美元</li>
+<li>CNY人民币
+<li>USD美元
 EUR欧元
 JPY日元
 HKD港元
